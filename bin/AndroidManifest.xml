@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.myweather.app"
+    package="com.swustzl.myweather"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -14,17 +14,17 @@
         android:theme="@style/AppTheme" >
         
       
-        <activity android:name=".activity.ChooseAreaActivity">
+        <activity android:name="com.swustzl.myweather.activity.ChooseAreaActivity">
             <intent-filter >
                <action android:name="android.intent.action.MAIN"/>
                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.myweather.app.activity.ShowWeatherActivity"></activity>
+        <activity android:name="com.swustzl.myweather.activity.ShowWeatherActivity"></activity>
         
-        <service android:name="com.myweather.app.service.AutoUpdateWeatherService"></service>
+        <service android:name="com.swustzl.myweather.service.AutoUpdateWeatherService"></service>
         
-        <receiver android:name="com.myweather.app.receiver.AutoUpdateWeatherReceiver"></receiver>
+        <receiver android:name="com.swustzl.myweather.receiver.AutoUpdateWeatherReceiver"></receiver>
     </application>
 
 </manifest>
